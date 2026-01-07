@@ -1,0 +1,12 @@
+seja usuario = "Desenvolvedor"
+exibir "Iniciando sistema para usuário..."
+
+esperar 1s
+
+exibir "Buscando dados na nuvem..."
+seja post = buscar em "https://jsonplaceholder.typicode.com/posts/1"
+
+exibir "Gravando resultado..."
+gravar post em "resultado.json"
+
+exibir "Processo finalizado com sucesso!"
